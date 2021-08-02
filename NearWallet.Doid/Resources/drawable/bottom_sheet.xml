@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="rectangle">
+            <corners
+                  android:topLeftRadius="@dimen/corner_radius_max"
+                  android:topRightRadius="@dimen/corner_radius_max"
+                  android:bottomLeftRadius="0dp"
+                  android:bottomRightRadius="0dp"/>
+            <gradient  android:startColor="@color/window_background"  android:endColor="@color/window_background"/>
+        </shape>
+    </item>
+</selector>

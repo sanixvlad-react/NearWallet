@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lt_receive_coin"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:background="@drawable/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/TextViewTitle"
+        android:gravity="center"
+        android:text="@string/your_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+		android:id="@+id/til_wallet"
+        android:layout_below="@+id/txt_send_to"
+		android:layout_marginTop="@dimen/padding_max"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/send_hint_wallet"
+		app:hintTextColor="@color/text_input_layout_color"
+		app:boxStrokeColor="@color/colorAccent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_waller_path"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            style="@style/TextView"
+            android:background="@drawable/txt_background"
+            android:text="@string/your_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+	</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="@dimen/corner_radius_max">
+
+        <ImageView
+            android:id="@+id/img_qr_code"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:scaleType="matrix"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        style="@style/TextViewDefault"
+        android:gravity="center"
+        android:text="@string/message_camera_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        style="@style/TextViewDefault"
+        android:gravity="center"
+        android:text="@string/message_camera_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_width="0dp">
+
+            <ru.sanix.RoundImageButton
+                android:id="@+id/rib_copy"
+                app:rib_title="@string/copy"
+                app:rib_image_src="@drawable/ic_copy"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_width="0dp">
+
+            <ru.sanix.RoundImageButton
+                android:id="@+id/rib_share"
+                app:rib_title="@string/share"
+                app:rib_image_src="@drawable/ic_share"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

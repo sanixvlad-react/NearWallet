@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--отображение баланса-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lt_data_balance"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_balance_near"
+                android:text="13.38112"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/max_text_size"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="@string/near_balance"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/smoll_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lt_load_balance"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/max_text_size"
+                android:textStyle="bold"
+                android:text="@string/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <pl.tajchert.waitingdots.DotsTextView
+                android:id="@+id/dotsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/max_text_size"
+                android:textColor="@color/colorAccent"
+                app:autoplay="false"
+                app:period="1000"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"       
+            android:layout_weight="1"
+            android:layout_width="0dp">
+
+            <ru.sanix.RoundImageButton
+                android:id="@+id/rib_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight ="true"
+                app:rib_title="@string/send"
+                app:rib_image_src="@drawable/ic_send" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"       
+            android:layout_weight="1"
+            android:layout_width="0dp">
+
+            <ru.sanix.RoundImageButton
+                android:id="@+id/rib_receive"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rib_title="@string/receive"
+                app:rib_image_src="@drawable/ic_receive"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"       
+            android:layout_weight="1"
+            android:layout_width="0dp">
+
+            <ru.sanix.RoundImageButton
+                android:id="@+id/rib_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                app:rib_title="@string/buy"
+                app:rib_image_src="@drawable/ic_buy"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

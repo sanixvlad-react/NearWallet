@@ -1,0 +1,23 @@
+<resources>
+  <declare-styleable name="SimpleSearchView">
+  	<attr name="backIconAlpha" format="reference" />
+  	<attr name="iconsAlpha" format="reference" />
+  	<attr name="backIconTint" format="color" />
+  	<attr name="iconsTint" format="color" />
+  	<attr name="cursorColor" format="color" />
+  	<attr name="hintColor" format="color" />
+  	<attr name="searchBackground" format="reference|color" />
+  	<attr name="searchBackIcon" format="reference" />
+  	<attr name="searchClearIcon" format="reference" />
+  	<attr name="searchVoiceIcon" format="reference" />
+  	<attr name="voiceSearch" format="boolean" />
+  	<attr name="voiceSearchPrompt" format="string" />
+  	<attr name="hint" format="string" />
+  	<attr name="textColor" format="color" />
+  	<attr name="inputType" format="reference" />
+  	<attr name="type" format="enum">
+  		<enum name="bar" value="0" />
+  		<enum name="card" value="1" />
+  	</attr>
+  </declare-styleable>
+</resources>

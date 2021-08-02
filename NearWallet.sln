@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.809.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NearWallet.Core", "NearWallet.Core\NearWallet.Core.csproj", "{864A183A-E54D-41A8-A162-91D84ABB3CF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NearWallet.Doid", "NearWallet.Doid\NearWallet.Doid.csproj", "{B6C148F7-887F-4BA4-9532-B134B2E3371B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Android", "Android", "{17C8EB48-703A-4418-9E65-770C5A6F7A02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchTab", "SwitchTab\SwitchTab.csproj", "{A8219699-A7EA-4BB9-8089-2B6EA2C1A62F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialSearchView", "MaterialSearchView\MaterialSearchView.csproj", "{D8E4E530-96E3-457C-899C-47A1CCC52621}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwipeListView", "SwipeListView\SwipeListView.csproj", "{E3329613-35B5-40B3-95E9-3E0DCCF3F629}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{864A183A-E54D-41A8-A162-91D84ABB3CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{864A183A-E54D-41A8-A162-91D84ABB3CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{864A183A-E54D-41A8-A162-91D84ABB3CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{864A183A-E54D-41A8-A162-91D84ABB3CF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6C148F7-887F-4BA4-9532-B134B2E3371B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6C148F7-887F-4BA4-9532-B134B2E3371B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6C148F7-887F-4BA4-9532-B134B2E3371B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6C148F7-887F-4BA4-9532-B134B2E3371B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8219699-A7EA-4BB9-8089-2B6EA2C1A62F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8219699-A7EA-4BB9-8089-2B6EA2C1A62F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8219699-A7EA-4BB9-8089-2B6EA2C1A62F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8219699-A7EA-4BB9-8089-2B6EA2C1A62F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8E4E530-96E3-457C-899C-47A1CCC52621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8E4E530-96E3-457C-899C-47A1CCC52621}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8E4E530-96E3-457C-899C-47A1CCC52621}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8E4E530-96E3-457C-899C-47A1CCC52621}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3329613-35B5-40B3-95E9-3E0DCCF3F629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3329613-35B5-40B3-95E9-3E0DCCF3F629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3329613-35B5-40B3-95E9-3E0DCCF3F629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3329613-35B5-40B3-95E9-3E0DCCF3F629}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E4A9585-1CE7-4EEE-8548-1929FB42ECD8}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A8219699-A7EA-4BB9-8089-2B6EA2C1A62F} = {17C8EB48-703A-4418-9E65-770C5A6F7A02}
+		{B6C148F7-887F-4BA4-9532-B134B2E3371B} = {17C8EB48-703A-4418-9E65-770C5A6F7A02}
+		{D8E4E530-96E3-457C-899C-47A1CCC52621} = {17C8EB48-703A-4418-9E65-770C5A6F7A02}
+		{E3329613-35B5-40B3-95E9-3E0DCCF3F629} = {17C8EB48-703A-4418-9E65-770C5A6F7A02}
+	EndGlobalSection
+EndGlobal

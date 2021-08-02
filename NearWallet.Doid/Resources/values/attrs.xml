@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+  <declare-styleable name="RoundImageButton">
+    <attr name="rib_title" format="string"/>
+    <attr name="rib_image_src" format="reference|color"/>
+  </declare-styleable>
+
+  <declare-styleable name="SwitchSecurityView">
+    <attr name="ssv_title" format="string|reference"/>
+  </declare-styleable>
+</resources>

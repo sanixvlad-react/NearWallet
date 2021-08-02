@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/padding_min"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="@dimen/padding_max">
+
+    <LinearLayout
+        android:id="@+id/lt_all_data_balance"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="@dimen/padding_max"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:id="@+id/txt_wallet_id"
+                android:text="@string/wallet_id"
+                style="@style/TextViewDefaultBold"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="@dimen/padding_min"
+                android:paddingTop="@dimen/padding_min"
+                android:background="@drawable/txt_background_colorize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_wallet_id_name"
+                    style="@style/TextViewDefaultBold"
+                    android:text="sanix.near"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/padding_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_copy_reverse"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rlt_wallet_balance"
+            android:padding="@dimen/padding_max"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:id="@+id/txt_wallet_balance"
+                android:text="@string/wallet_balance"
+                style="@style/TextViewDefaultBold"
+                android:drawableRight="@drawable/ic_chevrone_down"
+                android:drawablePadding="@dimen/padding_min"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_wallet_balance_count"
+                style="@style/TextViewDefaultBold"
+                android:text="10.12 NEAR"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lt_wallet_balance"
+            android:orientation="vertical"
+            android:animateLayoutChanges= "true"
+            android:paddingLeft="@dimen/padding_max"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="@dimen/padding_max"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:id="@+id/txt_wallet_balance_reserved"
+                    android:text="@string/reserved_for_storage"
+                    style="@style/TextViewDefault"
+                    android:drawableRight="@drawable/ic_info_small"
+                    android:drawablePadding="@dimen/padding_min"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/txt_wallet_balance_count"
+                    style="@style/TextViewDefaultBold"
+                    android:text="0.3542 NEAR"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <View
+                android:background="@color/colorAccent"
+                android:layout_marginLeft="@dimen/padding_max"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rlt_in_staking_pools"
+                android:padding="@dimen/padding_max"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:id="@+id/txt_wallet_reserve_storage"
+                    android:text="@string/in_staking_pools"
+                    style="@style/TextViewDefault"
+                    android:drawableRight="@drawable/ic_chevrone_down"
+                    android:drawablePadding="@dimen/padding_min"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/txt_wallet_reserve_storage_count"
+                    style="@style/TextViewDefaultBold"
+                    android:text="0.3542 NEAR"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lt_wallet_staking_pools"
+                android:orientation="vertical"
+                android:animateLayoutChanges= "true"
+                android:paddingLeft="@dimen/padding_max"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:padding="@dimen/padding_max"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp">
+
+                    <TextView
+                        android:id="@+id/txt_wallet_staked"
+                        android:text="@string/staked"
+                        style="@style/TextViewDefault"
+                        android:drawableRight="@drawable/ic_info_small"
+                        android:drawablePadding="@dimen/padding_min"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txt_wallet_staked_count"
+                        style="@style/TextViewDefaultBold"
+                        android:text="100.2 NEAR"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:background="@color/colorAccent"
+                    android:layout_marginLeft="@dimen/padding_max"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <RelativeLayout
+                    android:padding="@dimen/padding_max"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp">
+
+                    <TextView
+                        android:id="@+id/txt_wallet_pending_release"
+                        android:text="@string/pending_release"
+                        style="@style/TextViewDefault"
+                        android:drawableRight="@drawable/ic_info_small"
+                        android:drawablePadding="@dimen/padding_min"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txt_wallet_pending_release_count"
+                        style="@style/TextViewDefaultBold"
+                        android:text="0 NEAR"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:background="@color/colorAccent"
+                    android:layout_marginLeft="@dimen/padding_max"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <RelativeLayout
+                    android:padding="@dimen/padding_max"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp">
+
+                    <TextView
+                        android:id="@+id/txt_wallet_balance_available_withdraw"
+                        android:text="@string/available_for_withdrawal"
+                        style="@style/TextViewDefault"
+                        android:drawableRight="@drawable/ic_info_small"
+                        android:drawablePadding="@dimen/padding_min"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txt_wallet_balance_available_for_withdrawal"
+                        style="@style/TextViewDefaultBold"
+                        android:text="0 NEAR"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/colorAccent"
+                android:layout_marginLeft="@dimen/padding_max"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:padding="@dimen/padding_max"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:id="@+id/txt_wallet_balance_avaible"
+                    android:text="@string/available"
+                    style="@style/TextViewDefault"
+                    android:drawableRight="@drawable/ic_info_small"
+                    android:drawablePadding="@dimen/padding_min"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/txt_wallet_balance_avaible_count"
+                    style="@style/TextViewDefaultBold"
+                    android:text="0.3542 NEAR"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+         <View
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rlt_authorization_apps"
+            android:padding="@dimen/padding_max"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:id="@+id/txt_authorization_apps"
+                android:text="@string/authorized_apps"
+                style="@style/TextViewDefaultBold"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:src="@drawable/ic_chevrone_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <View
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rlt_recent_activity"
+            android:padding="@dimen/padding_max"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:id="@+id/txt_recent_activity"
+                android:text="@string/recent_activity"
+                style="@style/TextViewDefaultBold"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:src="@drawable/ic_chevrone_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <View
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rlt_go_to_another_wallet"
+            android:padding="@dimen/padding_max"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:id="@+id/txt_recent_activity"
+                android:text="@string/go_to_another_wallet"
+                style="@style/TextViewDefaultBold"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:src="@drawable/ic_chevrone_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <View
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rlt_exit"
+            android:padding="@dimen/padding_max"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:id="@+id/txt_exit"
+                android:text="@string/exit"
+                style="@style/TextViewDefaultBold"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:src="@drawable/ic_chevrone_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+       
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

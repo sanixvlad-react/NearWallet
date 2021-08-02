@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_coin"
+    android:layout_marginLeft="@dimen/padding_max"
+    android:layout_marginRight="@dimen/padding_max"
+    android:layout_marginTop="@dimen/padding_min"
+    android:layout_marginBottom="@dimen/padding_min"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="@dimen/corner_radius_max">
+
+    <RelativeLayout
+        android:padding="8dp"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_coin"
+            android:background="@drawable/circle_image_background"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"/>
+
+        <LinearLayout
+            android:paddingLeft="8dp"
+            android:layout_toLeftOf="@+id/rlt_data"
+            android:layout_toRightOf="@+id/img_coin"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_coin_wallet"
+                style="@style/TextViewDefaultBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_coin_name"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                style="@style/TextViewDefault"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlt_data"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_coin_balance"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_view"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

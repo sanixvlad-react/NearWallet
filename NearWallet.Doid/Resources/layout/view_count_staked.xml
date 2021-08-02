@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_stake_tokens"
+        android:text="@string/stake_my_tokens"
+        style="@style/ButtonStyle"
+        android:layout_marginRight="@dimen/padding_max"
+        android:layout_marginLeft="@dimen/padding_max"
+        android:layout_marginBottom="@dimen/padding_min"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_max"
+        android:paddingRight="@dimen/padding_max"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:paddingTop="@dimen/padding_max"
+            android:paddingBottom="@dimen/padding_max"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btn_unstake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/lt_total_staked"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        style="@style/TextViewDefault"
+                        android:text="@string/total_amount_staked"
+                        android:layout_marginRight="@dimen/padding_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/img_total_amount"
+                        android:src="@drawable/ic_info"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_total_staked"
+                    android:layout_below="@+id/lt_total_staked"
+                    style="@style/TextViewDefaultBold"
+                    android:text="10 NEAR"
+                    android:layout_marginRight="@dimen/padding_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_unstake"
+                style="@style/ButtonStyle"
+                android:text="@string/unstake"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <View
+            android:background="@color/color_grey"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:paddingTop="@dimen/padding_max"
+            android:paddingBottom="@dimen/padding_max"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lt_rewards_earned"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    style="@style/TextViewDefault"
+                    android:text="@string/rewards_earned"
+                    android:layout_marginRight="@dimen/padding_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/img_rewards_earned"
+                    android:src="@drawable/ic_info"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_total_rewards_earned"
+                android:layout_below="@+id/lt_rewards_earned"
+                style="@style/TextViewDefaultBold"
+                android:text="0.11921 NEAR"
+                android:layout_marginRight="@dimen/padding_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <View
+            android:background="@color/color_grey"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:paddingTop="@dimen/padding_max"
+            android:paddingBottom="@dimen/padding_max"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lt_pending_release"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    style="@style/TextViewDefault"
+                    android:text="@string/pending_release"
+                    android:layout_marginRight="@dimen/padding_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/img_pending_release"
+                    android:src="@drawable/ic_info"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_pending_release"
+                android:layout_below="@+id/lt_pending_release"
+                style="@style/TextViewDefaultBold"
+                android:text="0 NEAR"
+                android:layout_marginRight="@dimen/padding_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <View
+            android:background="@color/color_grey"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:paddingTop="@dimen/padding_max"
+            android:paddingBottom="@dimen/padding_max"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lt_withdraw"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    style="@style/TextViewDefault"
+                    android:text="@string/available_for_withdrawal"
+                    android:layout_marginRight="@dimen/padding_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/img_avaible_for_withdraw"
+                    android:src="@drawable/ic_info"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_withdraw"
+                android:layout_below="@+id/lt_withdraw"
+                style="@style/TextViewDefaultBold"
+                android:text="0 NEAR"
+                android:layout_marginRight="@dimen/padding_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+             <Button
+                android:id="@+id/btn_withdraw"
+                style="@style/ButtonStyle"
+                android:text="@string/withdraw"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

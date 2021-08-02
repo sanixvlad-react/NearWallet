@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_min"
+    android:paddingRight="@dimen/padding_min"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TextViewTitle"
+            android:text="@string/account_etails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ru.sanix.WalletDataView
+            android:id="@+id/wallet_data_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/TextViewTitle"
+            android:text="@string/recurity_and_recovery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ru.sanix.WalletSecurityView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_max"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="@dimen/padding_min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_max"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/padding_max">
+
+            <RelativeLayout
+               android:id="@+id/rlt_delete_wallet"
+               android:padding="@dimen/padding_max"
+               android:background="?android:attr/selectableItemBackground"
+               android:clickable="true"
+               android:layout_width="match_parent"
+               android:layout_height="40dp">
+
+               <TextView
+                   android:id="@+id/txt_delete_wallet"
+                   android:text="@string/delete_wallet"
+                   style="@style/TextViewDefaultBold"
+                   android:layout_centerVertical="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+               <ImageView
+                   android:src="@drawable/ic_chevrone_right"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_max"/>
+
+        <ru.sanix.SettingsView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    
+
+</androidx.core.widget.NestedScrollView>

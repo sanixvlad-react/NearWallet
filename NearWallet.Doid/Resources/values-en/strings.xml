@@ -1,0 +1,172 @@
+<resources>
+
+    <string name="app_name">Wallet</string>
+    <!--Bottoms tabs string-->
+    <string name="tokens">Tokens</string>
+    <string name="staking">Staking</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="map">Map</string>
+    <string name="profil">Profil</string>
+    <string name="wallet">Wallet</string>
+
+    <string name="search">Search</string>
+
+    <string name="near_balance">Total NEAR Balance</string>
+    <string name="loading">Loading</string>
+
+    <string name="edit_token_list">Edit token list</string>
+
+    <!--wallet name password-->
+    <string name="create_wallet_title">Create a new wallet</string>
+    <string name="wallet_name">Wallet name</string>
+    <string name="spending_password">Spending password</string>
+    <string name="repeat_spending_password">Repeat spending password</string>
+    <string name="continue_">Continue</string>
+
+    <!--Menu string-->
+    <string name="add_token">Add token</string>
+
+    <!--AuthCell-->
+    <string name="fee_allowance">Fee Allowance:</string>
+    <string name="public_key">Public Key:</string>
+
+    <!--Titile buttons-->
+    <string name="receive">Receive</string>
+    <string name="buy">Buy</string>
+    <string name="send">Send</string>
+
+    <!--Staking-->
+    <string name="validator_name_near">validator-name.near</string>
+    <string name="staking_message">Stake your NEAR tokens with a validator</string>
+    <string name="available">Available</string>
+    <string name="staked">Staked</string>
+    <string name="stake_amount">Stake Amount</string>
+    <string name="stake_my_tokens">Stake My Tokens</string>
+    <string name="staking_from">Staking from</string>
+    <string name="stake_with">Stake with</string>
+    <string name="staking_from_message">If you have loked NEAR, you can choose to stake with either your loked NEAR (lokup.near), or your unloked NEAR (your account name). You will only see the staking positions for the selected account. If you do not have loked NEAR, you can ignore this section.</string>
+    <string name="total_amount_staked">Total amount staked</string>
+    <string name="total_amount_staked_message">NEAR tokens currently staked with validators. These tokens are accumulating rewards. To access these tokens, you must first unstake and then withdraw them.</string>
+    <string name="rewards_earned">Rewards earned</string>
+    <string name="rewards_earned_message">Rewards that have been earned, but not withdraw. Rewards earned are automatically restaked, which means yout Total Amount Staked automatically increasesover time, and your rewards are compounding.</string>
+    <string name="pending_release">Pending release</string>
+    <string name="pending_release_message">These tokens have been unstaked, but are not yet ready to withdraw. Tokens are ready to withdraw 52 to 65 hours after unstaking.</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="available_for_withdrawal">Available for withdrawal</string>
+    <string name="available_for_withdrawal_message">These tokens have been unstaked, and are ready to be withdraw</string>
+    <string name="your_current_validators">Your Current Validators</string>
+    <string name="unstake">Unstake</string>
+    <string name="unstake_tokens">Unstake Tokens</string>
+    <string name="unstake_from">Unstake from</string>
+    <string name="validator">Validator:</string>
+    <string name="select_validator">Select a Validator</string>
+    <string name="stake_with_validator">Stake With Validator</string>
+
+    <!--Profil-->
+    <string name="wallet_id">Wallet ID</string>
+    <string name="wallet_balance">Wallet balance</string>
+    <string name="avaible_balance_prodil_message">"Available Balance" is your spendable NEAR balance</string>
+    <string name="reserved_for_store_message">This is the minimum NEAR balance your account must mintain to remain active. This balance represents the storage space your account is using on the NEAR blockchain (with a small buffer), and will go up or down as you use more or less space</string>
+    <string name="reserved_for_storage">Reserved for storage</string>
+    <string name="in_staking_pools">In staking pools</string>
+    <string name="authorized_apps">Authorized Apps</string>
+    <string name="account_etails">Account Details</string>
+    <string name="recurity_and_recovery">Security and Recovery</string>
+    <string name="recent_activity">Recent activity</string>
+    <string name="ledger_hardware_wallet">Ledger Hardware Wallet</string>
+    <string name="passphrase">Passphrase</string>
+    <string name="email">Email</string>
+    <string name="go_to_another_wallet">Go to another wallet</string>
+    <string name="exit">Exit</string>
+    <string name="delete_wallet">Delete wallet</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="phone">Phone</string>
+    <string name="two_factor_authentication">Two-Factor Authentication</string>
+
+    <!--settings-->
+    <string name="about">About</string>
+    <string name="application_version">Application version</string>
+
+    <string name="choose_language">Choose language</string>
+    <string name="language">Language</string>
+    <string name="russian">Russian</string>
+    <string name="english">English</string>
+
+    <string name="choose_theme">Choose theme</string>
+    <string name="theme">Theme</string>
+    <string name="dark">Dark</string>
+    <string name="light">Light</string>
+    <string name="system">System</string>
+
+    <!--Transactions-->
+    <string name="status">Status</string>
+    <string name="date_and_time">Date and Time</string>
+    <string name="for_for">For</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="in_contract">In Contract</string>
+    <string name="method">Method</string>
+    <string name="succeeded">Succeeded</string>
+    <string name="status_not_available">Status not available</string>
+    <string name="receive_near">Receive NEAR</string>
+    <string name="send_near">Send NEAR</string>
+
+    <!--Bottoms tabs string-->
+    <string name="balances">Balances</string>
+    <string name="collectibles">Collectibles</string>
+    <string name="buy_with">Buy with</string>
+    <string name="deposit">Deposit</string>
+    <string name="swap">Swap</string>
+    <string name="pools">Pools</string>
+
+    <string name="moonpay">MoonPay</string>
+    <string name="moonpay_message">Purchase NEAR through MoonPay using your preferred payment method.</string>
+    <string name="supported_exchanges">Supported Exchanges</string>
+    <string name="supported_exchanges_message">NEAR is available to purchase through the following exchanges.</string>
+    <string name="learn_more">Learn More</string>
+    <string name="see_more_on">See more on</string>
+    <string name="coin_market_cap">CoinMarketCap</string>
+
+    <string name="amount">Amount</string>
+    <string name="send_to">Send to</string>
+
+    <string name="your_address">Your address</string>
+
+    <string name="message_camera_1">Use your phone\'s camera app to</string>
+    <string name="message_camera_2">send to this address</string>
+
+    <string name="message_send">The account ID must include a Top Level Account such as .near or contain exactly 64 characters.</string>
+
+    <string name="send_hint_wallet">e.g. johndoe.near</string>
+
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+    <string name="submit">Submit</string>
+    <string name="avaible_to_send">Avaible to send</string>
+    <string name="use_max">Use Max</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+
+    <string name="my_wallets">My wallets</string>
+    <string name="add_wallet">Add wallet</string>
+    <string name="create_wallet">Create wallet</string>
+    <string name="import_wallet">Import wallet</string>
+    <string name="add_wallet_message">Select the type of adding a wallet</string>
+
+     <string name="exit_message">Click again to exit</string>
+
+    <!--Arrays-->
+    <string-array name="token_tab">
+        <item>@string/balances</item>
+        <item>@string/collectibles</item>
+    </string-array>
+
+    <string-array name="dashboard_tab">
+        <item>@string/deposit</item>
+        <item>@string/swap</item>
+        <item>@string/pools</item>
+    </string-array>
+
+</resources>

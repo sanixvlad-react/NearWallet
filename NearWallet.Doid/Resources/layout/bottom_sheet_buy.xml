@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_max">
+
+            <TextView
+                android:text="@string/moonpay"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:paddingTop="@dimen/padding_max"
+                android:paddingBottom="@dimen/padding_max"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="@string/moonpay_message"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/smoll_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_moon_pay_more"
+                android:text="@string/learn_more"
+                android:textColor="@color/color_link"
+                android:textSize="@dimen/smoll_text_size"
+                android:paddingTop="@dimen/padding_max"
+                android:paddingBottom="@dimen/padding_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_buy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                style="@style/ButtonStyle"
+                android:text="@string/buy_with"
+                android:layout_marginBottom="@dimen/padding_max"
+                app:iconTint="@null"
+                app:icon="@drawable/ic_moon_pay"
+                app:iconGravity="textEnd" />
+
+            <TextView
+                android:text="@string/supported_exchanges"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:paddingTop="@dimen/padding_max"
+                android:paddingBottom="@dimen/padding_max"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="@string/supported_exchanges_message"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/smoll_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_binance"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/padding_max"
+                android:layout_marginBottom="@dimen/padding_min"
+                android:layout_marginLeft="@dimen/padding_max"
+                android:layout_marginRight="@dimen/padding_min"
+                app:cardCornerRadius="@dimen/corner_radius_max"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/ic_binance"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_huobi"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/padding_max"
+                android:layout_marginBottom="@dimen/padding_min"
+                android:layout_marginLeft="@dimen/padding_min"
+                android:layout_marginRight="@dimen/padding_max"
+                app:cardCornerRadius="@dimen/corner_radius_max"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/ic_huobi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_okex"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/padding_min"
+                android:layout_marginBottom="@dimen/padding_min"
+                android:layout_marginLeft="@dimen/padding_max"
+                android:layout_marginRight="@dimen/padding_min"
+                app:cardCornerRadius="@dimen/corner_radius_max"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                 <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/ic_okex"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_gateio"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/padding_min"
+                android:layout_marginBottom="@dimen/padding_min"
+                android:layout_marginLeft="@dimen/padding_min"
+                android:layout_marginRight="@dimen/padding_max"
+                app:cardCornerRadius="@dimen/corner_radius_max"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/ic_gateio"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_max"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/see_more_on"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/smoll_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_coin_market_cap"
+                android:text="@string/coin_market_cap"
+                android:textColor="@color/color_link"
+                android:textSize="@dimen/smoll_text_size"
+                android:layout_marginLeft="@dimen/padding_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

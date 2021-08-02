@@ -1,0 +1,176 @@
+<resources>
+
+    <string name="app_name">Wallet</string>
+    <!--Bottoms tabs string-->
+    <string name="tokens">Tokens</string>
+    <string name="staking">Стейкинг</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="map">Карта</string>
+    <string name="profil">Аккаунт</string>
+    <string name="wallet">Кошелек</string>
+
+    <string name="search">Поиск</string>
+
+    <string name="near_balance">Общий баланс NEAR</string>
+    <string name="loading">Загрузка</string>
+
+    <string name="edit_token_list">Редактировать сиписок токенов</string>
+
+    <!--wallet name password-->
+    <string name="create_wallet_title">Новый кошелек</string>
+    <string name="wallet_name">Имя кошелька</string>
+    <string name="spending_password">Пароль</string>
+    <string name="repeat_spending_password">Повторите пароль</string>
+    <string name="continue_">Продолжить</string>
+
+    <!--Menu string-->
+    <string name="add_token">Добавить токен</string>
+
+    <!--AuthCell-->
+    <string name="fee_allowance">Оплата за хранение:</string>
+    <string name="public_key">Публичный ключ:</string>
+
+    <!--Titile buttons-->
+    <string name="receive">Получить</string>
+    <string name="buy">Купить</string>
+    <string name="send">Отправить</string>
+
+    <!--Staking-->
+    <string name="validator_name_near">validator-name.near</string>
+    <string name="staking_message">Отправьте токены NEAR в стейкинг валидатору</string>
+    <string name="available">Доступно</string>
+    <string name="staked">В стейкинге</string>
+    <string name="stake_amount">Количество в стэйкинге</string>
+    <string name="stake_my_tokens">Стэйкинг NEAR</string>
+    <string name="staking_from">Стейкинг от</string>
+    <string name="stake_with">Stake with</string>
+    <string name="staking_from_message">Если вы заблокировали NEAR, вы можете сделать ставку либо со своим заблокированным NEAR (lokup.near), либо с разблокированным NEAR (имя вашей учетной записи). Вы увидите только позиции ставок для выбранной учетной записи. Если вы не заблокировали NEAR, вы можете игнорировать этот раздел.</string>
+    <string name="total_amount_staked">Общий размер стейкинга</string>
+    <string name="total_amount_staked_message">Токены NEAR в настоящее время размещены на валидаторах. Эти жетоны накапливают вознаграждение. Чтобы получить доступ к этим токенам, вы должны сначала снять ставки, а затем вывести их.</string>
+    <string name="rewards_earned">Незатребованные награды</string>
+    <string name="rewards_earned_message">Награды, которые были заработаны, но не снимаются. Заработанные вознаграждения автоматически пересчитываются, что означает, что ваша общая сумма ставки автоматически увеличивается с течением времени, а ваши вознаграждения увеличиваются.</string>
+    <string name="pending_release">В ожидании выхода из стейкинга</string>
+    <string name="pending_release_message">Эти токены сняты со стейкинга, но еще не могут быть выведены. Токенам требуется от 52 до 65 часов на вывод со стейкинга.</string>
+    <string name="withdraw">Отозвать</string>
+    <string name="available_for_withdrawal">Доступно для вывода</string>
+    <string name="available_for_withdrawal_message">Эти токены сняты со стейкинга и теперь могут быть выведены.</string>
+    <string name="your_current_validators">Ваши текущие валидаторы</string>
+    <string name="unstake">Снять со стейкинга</string>
+    <string name="unstake_tokens">Вывести токены из стейкинга</string>
+    <string name="unstake_from">Снимите ставку с</string>
+    <string name="validator">Валидатор:</string>
+    <string name="select_validator">Выберите валидатора</string>
+    <string name="stake_with_validator">Стэйкинг с валидатором</string>
+
+    <!--Profil-->
+    <string name="wallet_id">Учетная запись</string>
+    <string name="wallet_balance">Баланс кошелька</string>
+    <string name="avaible_balance_prodil_message">«Доступный баланс» - это тот баланс в NEAR, который вы можете сейчас потратить.</string>
+    <string name="reserved_for_store_message">Минимальный баланс в NEAR, который должен храниться на учетной записи для того, чтобы она оставалась активной. Этот баланс представляет собой расходы на поддержание хранилища для вашей учетной записи в блокчейне NEAR (с небольшим запасом), и может расти или падать в завимости от того, требуется ли для учетной записи больше или меньше места.</string>
+    <string name="reserved_for_storage">Зарезерировано под оплату хранилища</string>
+    <string name="in_staking_pools">В стейкинг-пулах</string>
+    <string name="authorized_apps">Авторизованные приложения</string>
+    <string name="account_etails">Имя пользователя</string>
+    <string name="recurity_and_recovery">Безопасность и восстановление</string>
+    <string name="recent_activity">Транзакции</string>
+    <string name="ledger_hardware_wallet">Аппаратный кошелек Ledger</string>
+    <string name="passphrase">Мнемоническая фраза</string>
+    <string name="email">Электронный адрес</string>
+    <string name="go_to_another_wallet">Перейти в другой кошелек</string>
+    <string name="exit">Выход</string>
+    <string name="delete_wallet">Удалить кошелек</string>
+    <string name="settings">Настройки</string>
+    <string name="help">Помощь</string>
+    <string name="phone">Телефонный номер</string>
+    <string name="two_factor_authentication">Двухфакторная аутентификация</string>
+
+    <!--settings-->
+    <string name="about">Прочее</string>
+    <string name="application_version">Версия приложения</string>
+
+    <string name="choose_language">Выберите язык</string>
+    <string name="language">Язык</string>
+    <string name="russian">Русский</string>
+    <string name="english">Английский</string>
+
+    <string name="choose_theme">Выберите тему</string>
+    <string name="theme">Тема</string>
+    <string name="dark">Темная</string>
+    <string name="light">Светлая</string>
+    <string name="system">Системная</string>
+
+    <!--Transactions-->
+    <string name="status">Статус</string>
+    <string name="date_and_time">Дата и время</string>
+    <string name="access_key_added">Добавление ключа доступа</string>
+    <string name="for_for">Для</string>
+    <string name="from">От</string>
+    <string name="to">Кому</string>
+    <string name="in_contract">Контракт</string>
+    <string name="method">Метод</string>
+    <string name="succeeded">Удалось</string>
+    <string name="status_not_available">Недоступен</string>
+    <string name="receive_near">Получение NEAR</string>
+    <string name="send_near">Отправка NEAR</string>
+
+    <!--Bottoms tabs string-->
+    <string name="balances">Баланс</string>
+    <string name="collectibles">Коллекция</string>
+    <string name="buy_with">Купить с</string>
+    <string name="deposit">Депозит</string>
+    <string name="swap">Обменять</string>
+    <string name="pools">Pools</string>
+
+    <string name="moonpay">MoonPay</string>
+    <string name="moonpay_message">Купите NEAR через MoonPay, используя предпочитаемый вами способ оплаты.</string>
+    <string name="supported_exchanges">Поддерживаемые биржи</string>
+    <string name="supported_exchanges_message">NEAR доступен для покупки на следующих биржах.</string>
+    <string name="learn_more">Читать больше</string>
+    <string name="see_more_on">Смотрите больше на</string>
+    <string name="coin_market_cap">CoinMarketCap</string>
+
+    <string name="amount">Количество</string>
+    <string name="send_to">Отправить</string>
+
+    <string name="your_address">Ваш адрес</string>
+
+    <string name="message_camera_1">Используйте камеру вашего телефона, чтобы</string>
+    <string name="message_camera_2">отправить на этот адрес</string>
+
+    <string name="message_send">Идентификатор учетной записи должен включать учетную запись верхнего уровня, например .near, или содержать ровно 64 символа.</string>
+
+    <string name="send_hint_wallet">e.g. johndoe.near</string>
+
+    <string name="copy">Копировать</string>
+    <string name="share">Поделиться</string>
+    <string name="submit">Подтвердить</string>
+    <string name="avaible_to_send">Доступно для отправки</string>
+    <string name="use_max">Максимум</string>
+
+    <string name="cancel">Отменить</string>
+    <string name="ok">Принять</string>
+
+    <string name="my_wallets">Мои кошельки</string>
+    <string name="add_wallet">Добавить кошелек</string>
+    <string name="create_wallet">Создать кошелек</string>
+    <string name="import_wallet">Импортировать кошелек</string>
+    <string name="add_wallet_message">Выберите тип добавления кошелька</string>
+
+     <string name="exit_message">Нажмите снова для выхода</string>
+
+    <!--Arrays-->
+    <string-array name="token_tab">
+        <item>@string/balances</item>
+        <item>@string/collectibles</item>
+    </string-array>
+
+    <string-array name="dashboard_tab">
+        <item>@string/deposit</item>
+        <item>@string/swap</item>
+        <item>@string/pools</item>
+    </string-array>
+
+
+
+
+</resources>

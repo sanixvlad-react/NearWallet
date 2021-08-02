@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1a1a1a</color>
+    <color name="colorPrimaryDark">#1a1a1a</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="alert_scrim">#CCFFFFFF</color>
+
+    <color name="window_background">#000000</color>
+    <color name="status_bar_color">#1a1a1a</color>
+    <color name="text_background">#33FFFFFF</color>
+    <color name="color_grey">#656565</color>
+    
+</resources>

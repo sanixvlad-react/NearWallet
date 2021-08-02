@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <item
+      android:id="@+id/action_token"
+      android:enabled="true"
+      android:icon="@drawable/ic_near"
+      android:title="@string/wallet"
+      app:showAsAction="ifRoom" />
+  
+  <item
+      android:id="@+id/action_staking"
+      android:enabled="true"
+      android:icon="@drawable/ic_staking"
+      android:title="@string/staking"
+      app:showAsAction="ifRoom" />
+
+    <!--<item
+      android:id="@+id/action_dashboard"
+      android:enabled="true"
+      android:icon="@drawable/ic_dashboard"
+      android:title="@string/dashboard"
+      app:showAsAction="ifRoom" />-->
+
+    <item
+      android:id="@+id/action_map"
+      android:enabled="true"
+      android:icon="@drawable/ic_map"
+      android:title="@string/map"
+      app:showAsAction="ifRoom" />
+
+  <item
+      android:id="@+id/action_profil"
+      android:enabled="true"
+      android:icon="@drawable/ic_profil"
+      android:title="@string/profil"
+      app:showAsAction="ifRoom" />
+  
+</menu>
